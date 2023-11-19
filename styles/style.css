@@ -1,0 +1,489 @@
+/* Общие стили */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #dee3cd;
+}
+
+a {
+  color: #3f681c;
+}
+
+a:hover {
+  color: #fb6542;
+}
+
+.wrapper {
+  width: 1100px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #b7b8b6;
+}
+
+.container {
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Стили для заголовка */
+header {
+  background-color: #3f681c;
+  height: 270px;
+  color: #fff;
+  margin: 0;
+}
+
+/* Стили для верхнего меню */
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover, nav a.active {
+  color: #ffbb00;
+  text-decoration: underline;
+}
+
+/* Стили для слайдера */
+.slider {
+  width: 100%;
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 7px;
+}
+
+.slider img {
+  position: absolute;
+  top: 10;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slider img.active {
+  opacity: 1;
+}
+
+/* Стили для контента */
+main {
+  width: 660px;
+	padding: 20px;
+}
+
+.left {
+	width: 200px;
+	margin-right: 20px;
+	padding: 20px;
+}
+
+.right {
+	width: 200px;
+	margin-left: 20px;
+	padding: 20px;
+}
+
+main h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  max-width: 320px;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  color: #465457;
+  padding: 0 0 6px 10px;
+  border-left: 10px solid #d7f0ba;
+  border-bottom: 2px solid #d7f0ba;
+}
+
+main p {
+  text-align: justify;
+  margin-top: 10px;
+}
+
+/* Стили для календаря */
+.look-calendar {
+  width: 210px;
+  border: 1px solid #c0c0c0;
+  padding: 6px;
+  margin: 0 auto;    
+}
+
+.calendar-title {
+  width: 210px;
+  padding: 6px;
+  background: #375e97;
+  color: #fff;
+  font-size: 16px; 
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px; 
+}
+
+#calendar {
+  width: 100%;
+  line-height: 1.2em;
+  font-size: 15px;
+  text-align: center;
+  border-spacing: 0px;
+}
+#calendar tr.dn td {
+  font-size: 15px;
+}
+#calendar thead tr:last-child {
+  font-size: small;
+  color: #555555;
+}
+#calendar thead tr:nth-child(1) td:nth-child(2) {
+  color: #323232;
+}
+#calendar thead tr:nth-child(1) td:nth-child(1):hover,
+#calendar thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar tbody td {
+  color: #375e97;
+}
+#calendar tbody td:nth-child(n+6),
+#calendar .holiday {
+  color: #fb6542;
+}
+#calendar tbody td.today {
+  background: #dc0000;
+  color: #fff;
+}
+
+/* Стили для поиска */
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.searchTerm {
+  width: 100%;
+  border: 1px solid #555555;
+  background: #fb6542;
+  padding: 5px;
+  height: 36px;
+  outline: none;
+}
+.searchTerm:focus{
+  color: #fff;
+}
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #fb6542;
+  background: #fb6542;
+  text-align: center;
+  color: #eeeeee;
+  cursor: pointer;
+  font-size: 16px;
+}
+.search-form {
+  width: 210px;
+  margin: 5px auto; 
+}
+
+/* Стиль для правого меню */
+.subscription-title, .usefulLinks-title, .leaveFeedback-title {
+  display: block;
+  width: 210px;
+  padding: 6px;
+  color: #fff;
+  font-size: 16px; 
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  line-height: 20px;
+  margin: 5px auto; 
+}
+
+.subscription-title {
+  background: #ffbb00;
+}
+
+.usefulLinks-title {
+  background: #3f681c;
+}
+
+.leaveFeedback-title {
+  background: #375e97;
+}
+
+/* Стили для футера */
+footer {
+  background-color: #3f681c;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Стили для страницы фоторепортажи */
+.albumoverview {
+  margin-top: 10px;
+  width: 100%;
+  clear: both;
+  display: block !important
+}
+
+.album {
+  overflow: hidden;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc
+}
+
+.albumtitle {
+  text-align: left;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4em;
+  /* margin-bottom: 10px */
+}
+
+.thumbnail {
+  float: left;
+  margin: 0 !important;
+  margin-right: 12px !important
+}
+
+.thumbnail img {
+  background-color: #fff;
+  border: 1px solid #a9a9a9;
+  margin: 4px 0 4px 5px;
+  padding: 4px;
+  position: relative;
+  width: 200px;
+  height: 150px;
+}
+
+.thumbnail img:hover {
+  background-color: #a9a9a9
+}
+
+.description {
+  text-align: left
+}
+
+/* Галерея фоток */
+.gallery-container {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.gallery-photo {
+  float: left;
+  width: 25%;
+  padding: 5px; 
+  box-sizing: border-box; 
+}
+
+.gallery-photo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #a9a9a9;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.gallery-photo img:hover {
+  background-color: #a9a9a9  
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 10px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.tasks li {
+  text-align: justify;
+}
+
+/* внешние границы таблицы серого цвета толщиной 1px */
+.perfomers {
+  border: 1px solid grey;
+  width: 100%;
+}
+/* границы ячеек первого ряда таблицы */
+.perfomers th {
+  border: 1px solid grey;
+  padding: 10px;
+}
+/* границы ячеек тела таблицы */
+.perfomers td {
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.title-about {
+  text-align: center;
+}
+
+.articles-list li {
+  text-align: justify;
+}
+
+/* Медиа-запросы */
+
+@media screen and (max-width: 768px) {
+/* Стили для мобильных устройств */
+
+/* Общие стили */
+body {
+  font-size: 16px;
+}
+
+/* Стили для главного контейнера */
+.wrapper {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Стили для главного заголовка */
+h2 {
+  font-size: 24px;
+}
+
+/* Стили для основного содержимого */
+main {
+  width: 100%;
+}
+
+/* Стили для секций sidebars (левого и правого блоков) */
+aside.left, aside.right {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Стили для изображений в sidebars */
+aside.left img,
+aside.right img {
+  width: 100%;
+  height: auto;
+}
+
+/* Стили для навигации */
+nav ul {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Стили для элементов навигации */
+nav ul li {
+  margin-top: 5px;
+}
+}

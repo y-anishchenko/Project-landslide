@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Фоторепортажи</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="slider">
+                <img src="../images/slider/slide1.jpg" alt="Первый слайд">
+                <img src="../images/slider/slide2.jpg" alt="Второй слайд">
+                <img src="../images/slider/slide3.jpg" alt="Третий слайд">
+                <img src="../images/slider/slide4.jpg" alt="Четвёртый слайд">
+                <img src="../images/slider/slide5.jpg" alt="Пятый слайд">
+		    </div>
+			<nav>
+				<ul>
+					<li><a href="../index.html">ГЛАВНАЯ</a></li>
+					<li><a href="../pages/about.html">О НАС</a></li>
+					<li><a href="../pages/news.html">НОВОСТИ</a></li>
+					<li><a href="../pages/fotos.html">ФОТОРЕПОРТАЖИ</a></li>
+					<li><a href="../pages/videos.html">ВИДЕОМАТЕРИАЛЫ</a></li>
+					<li><a href="../pages/articles.html">СТАТЬИ</a></li>
+          <li><a href="../pages/reports.html">ОТЧЕТЫ</a></li>
+				</ul>
+			</nav>			
+		</header>		
+		<div class="container">			
+			<aside class="left">
+				<div class="calendar-title">Календарь событий</div>
+				<div class="look-calendar">
+					<table id="calendar">
+					  <thead>
+					  <tr>
+					  <td><b>‹</b>
+					  <td colspan="5">
+					  <td><b>›</b>
+					  <tr class="dn"><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+					  </thead>
+					  <tbody></tbody>
+					</table>
+				</div>
+				<div class="search-form">
+					<div class="search">
+						<input type="text" class="searchTerm" placeholder="Поиск...">
+        				<button type="submit" class="searchButton">
+        				<i class="fa fa-search"></i>
+        				</button>	
+					</div>
+				</div>
+				<a class="subscription-title" href="#">Подписка</a>
+				<a class="usefulLinks-title" href="#">Полезные ссылки</a>
+				<a class="leaveFeedback-title" href="#">Оставить отзыв</a>	
+			</aside>
+			<main>
+				<h2>Фоторепортажи</h2>
+				<div class="gallery-container">
+                    <!-- Фото, которые будут использоваться для открытия модального окна -->
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/1.jpg" onclick="openModal();currentSl(1)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/2.jpg" onclick="openModal();currentSl(2)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/3.jpg" onclick="openModal();currentSl(3)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/4.jpg" onclick="openModal();currentSl(4)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/5.jpg" onclick="openModal();currentSl(5)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/6.jpg" onclick="openModal();currentSl(6)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/7.jpg" onclick="openModal();currentSl(7)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/8.jpg" onclick="openModal();currentSl(8)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/9.jpg" onclick="openModal();currentSl(9)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/10.jpg" onclick="openModal();currentSl(10)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/11.jpg" onclick="openModal();currentSl(11)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/12.jpg" onclick="openModal();currentSl(12)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/13.jpg" onclick="openModal();currentSl(13)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/14.jpg" onclick="openModal();currentSl(14)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/15.jpg" onclick="openModal();currentSl(15)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/16.jpg" onclick="openModal();currentSl(16)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/17.jpg" onclick="openModal();currentSl(17)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/18.jpg" onclick="openModal();currentSl(18)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/19.jpg" onclick="openModal();currentSl(19)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/20.jpg" onclick="openModal();currentSl(20)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/21.jpg" onclick="openModal();currentSl(21)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/22.jpg" onclick="openModal();currentSl(22)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/23.jpg" onclick="openModal();currentSl(23)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/24.jpg" onclick="openModal();currentSl(24)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/25.jpg" onclick="openModal();currentSl(25)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/26.jpg" onclick="openModal();currentSl(26)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/27.jpg" onclick="openModal();currentSl(27)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/28.jpg" onclick="openModal();currentSl(28)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/29.jpg" onclick="openModal();currentSl(29)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/30.jpg" onclick="openModal();currentSl(30)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/31.jpg" onclick="openModal();currentSl(31)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/32.jpg" onclick="openModal();currentSl(32)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/33.jpg" onclick="openModal();currentSl(33)" class="cursor">
+                    </div>
+                    <div class="gallery-photo">
+                        <img src="../images/jalpaktash/34.jpg" onclick="openModal();currentSl(34)" class="cursor">
+                    </div>
+                    
+                    <!-- Модальное окно/Лайтбокс -->
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">1 / 34</div>
+                            <img src="../images/jalpaktash/1.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">2 / 34</div>
+                            <img src="../images/jalpaktash/2.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">3 / 34</div>
+                            <img src="../images/jalpaktash/3.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">4 / 34</div>
+                            <img src="../images/jalpaktash/4.jpg" style="width:100%">
+                          </div>
+                          
+                          <div class="mySlides">
+                            <div class="numbertext">5 / 34</div>
+                            <img src="../images/jalpaktash/5.jpg" style="width:100%">
+                          </div>
+                
+                          <div class="mySlides">
+                            <div class="numbertext">6 / 34</div>
+                            <img src="../images/jalpaktash/6.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">7 / 34</div>
+                            <img src="../images/jalpaktash/7.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">8 / 34</div>
+                            <img src="../images/jalpaktash/8.jpg" style="width:100%">
+                          </div>
+
+                          <div class="mySlides">
+                            <div class="numbertext">9 / 34</div>
+                            <img src="../images/jalpaktash/9.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">10 / 34</div>
+                            <img src="../images/jalpaktash/10.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">11 / 34</div>
+                            <img src="../images/jalpaktash/11.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">12 / 34</div>
+                            <img src="../images/jalpaktash/12.jpg" style="width:100%">
+                          </div>
+                          
+                          <div class="mySlides">
+                            <div class="numbertext">13 / 34</div>
+                            <img src="../images/jalpaktash/13.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">14 / 34</div>
+                            <img src="../images/jalpaktash/14.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">15 / 34</div>
+                            <img src="../images/jalpaktash/15.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">16 / 34</div>
+                            <img src="../images/jalpaktash/16.jpg" style="width:100%">
+                          </div>
+
+                          <div class="mySlides">
+                            <div class="numbertext">17 / 34</div>
+                            <img src="../images/jalpaktash/17.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">18 / 34</div>
+                            <img src="../images/jalpaktash/18.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">19 / 34</div>
+                            <img src="../images/jalpaktash/19.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">20 / 34</div>
+                            <img src="../images/jalpaktash/20.jpg" style="width:100%">
+                          </div>
+
+                          <div class="mySlides">
+                            <div class="numbertext">21 / 34</div>
+                            <img src="../images/jalpaktash/21.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">22 / 34</div>
+                            <img src="../images/jalpaktash/22.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">23 / 34</div>
+                            <img src="../images/jalpaktash/23.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">24 / 34</div>
+                            <img src="../images/jalpaktash/24.jpg" style="width:100%">
+                          </div>
+
+                          <div class="mySlides">
+                            <div class="numbertext">25 / 34</div>
+                            <img src="../images/jalpaktash/25.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">26 / 34</div>
+                            <img src="../images/jalpaktash/26.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">27 / 34</div>
+                            <img src="../images/jalpaktash/27.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">28 / 34</div>
+                            <img src="../images/jalpaktash/28.jpg" style="width:100%">
+                          </div>
+
+                          <div class="mySlides">
+                            <div class="numbertext">29 / 34</div>
+                            <img src="../images/jalpaktash/29.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">30 / 34</div>
+                            <img src="../images/jalpaktash/30.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">31 / 34</div>
+                            <img src="../images/jalpaktash/31.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">32 / 34</div>
+                            <img src="../images/jalpaktash/32.jpg" style="width:100%">
+                          </div>
+
+                          <div class="mySlides">
+                            <div class="numbertext">33 / 34</div>
+                            <img src="../images/jalpaktash/33.jpg" style="width:100%">
+                          </div>
+                      
+                          <div class="mySlides">
+                            <div class="numbertext">34 / 34</div>
+                            <img src="../images/jalpaktash/34.jpg" style="width:100%">
+                          </div>
+
+                          <!-- Следующий/предыдущий элемент управления -->
+                          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+			</main>
+			<aside class="right">
+				<a href="https://govori.tv/" target="_blank"><img src="https://govori.tv/wp-content/themes/govori/img/logo.png" width="150px" height="52px"></a>
+				<br>
+				<br>
+				<a href="https://www.turmush.kg" target="_blank"><img src="https://www.turmush.kg/ui-img/logo192.png" width="192px" height="44px"></a>
+				<br>
+				<br>
+				<a href="https://akipress.org" target="_blank"><img src="https://st-1.akipress.org/akipress_logo2.png"></a>
+				<br>
+				<br>
+				<a href="http://sreda.uz" target="_blank"><img style="display: inline-block; max-width: 85px;" src="http://sreda.uz/wp-content/themes/sreda/images/sreda2.jpg"/></a>
+				<br>
+				<br>
+				<a href="https://www.infoik.net.kg/" target="_blank"><img src="https://www.infoik.net.kg/templates/infoik/images/logo.png"></a>
+				<br>
+				<br>
+				<a href="http://ekois.net/" target="_blank"><img src="http://ekois.net/wp-content/uploads/2023/07/ekois_logo-1.png"></a>
+			</aside>
+		</div>
+		<footer>
+			<p>@ Copyright 2023. Все права защищены.</p>
+		</footer>
+	</div>
+    <script src="../scripts/slider.js"></script>
+    <script src="../scripts/calendar.js"></script>
+    <script src="../scripts/lightbox.js"></script>
+</body>
+</html>
