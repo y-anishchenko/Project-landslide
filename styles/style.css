@@ -91,7 +91,7 @@ nav a:hover, nav a.active {
 
 /* Стили для контента */
 main {
-  width: 660px;
+  width: 100%;
 	padding: 20px;
 }
 
@@ -126,6 +126,9 @@ main p {
   margin-top: 10px;
 }
 
+.calendar {
+  width: 210px;
+}
 /* Стили для календаря */
 .look-calendar {
   width: 210px;
@@ -444,7 +447,7 @@ footer {
 
 /* Медиа-запросы */
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 /* Стили для мобильных устройств */
 
 /* Общие стили */
@@ -457,7 +460,7 @@ body {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
-} 
+}
 
 /* Стили для главного заголовка */
 h2 {
@@ -465,22 +468,22 @@ h2 {
 }
 
 /* Стили для основного содержимого */
-main {
+main{
   width: 100%;
-} 
+}
 
 /* Стили для секций sidebars (левого и правого блоков) */
-aside.left, aside.right {
+.left, .right {
   width: 100%;
   margin-top: 20px;
-} 
+}
 
 /* Стили для изображений в sidebars */
-aside.left img,
-aside.right img {
+.left img,
+.right img {
   width: 100%;
   height: auto;
-} 
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -499,5 +502,10 @@ aside.right img {
 
   nav ul.show {
     display: block; /* Показать меню при активации кнопки-бургера */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
   }
 }
