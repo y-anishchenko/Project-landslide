@@ -457,7 +457,7 @@ body {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
-}
+} 
 
 /* Стили для главного заголовка */
 h2 {
@@ -467,20 +467,20 @@ h2 {
 /* Стили для основного содержимого */
 main {
   width: 100%;
-}
+} 
 
 /* Стили для секций sidebars (левого и правого блоков) */
 aside.left, aside.right {
   width: 100%;
   margin-top: 20px;
-}
+} 
 
 /* Стили для изображений в sidebars */
 aside.left img,
 aside.right img {
   width: 100%;
   height: auto;
-}
+} 
 }
 
 @media only screen and (max-width: 768px) {
