@@ -436,6 +436,12 @@ footer {
   text-align: justify;
 }
 
+.menu-toggle {
+  display: none; /* Скрываем кнопку-бургер по умолчанию */
+  background-color: #3f681c;
+  color: #fff;
+}
+
 /* Медиа-запросы */
 
 @media screen and (max-width: 768px) {
@@ -475,15 +481,23 @@ aside.right img {
   width: 100%;
   height: auto;
 }
-
-/* Стили для навигации */
-nav ul {
-  flex-direction: column;
-  align-items: center;
 }
 
-/* Стили для элементов навигации */
-nav ul li {
-  margin-top: 5px;
-}
+@media only screen and (max-width: 768px) {
+  /* Стили для мобильных устройств (например, ширина до 768px) */
+  .slider {
+    display: none; /* Скрыть слайдер на мобильных устройствах */
+  }
+
+  .menu-toggle {
+    display: block; /* Показать кнопку-бургер на мобильных устройствах */
+  }
+
+  nav ul {
+    display: none; /* Скрыть основное меню на мобильных устройствах */
+  }
+
+  nav ul.show {
+    display: block; /* Показать меню при активации кнопки-бургера */
+  }
 }
